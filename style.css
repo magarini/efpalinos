@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --dark-blue:#2E3440;
+    --light-grey:#ECEFF4;
+    --light-blue:#D8DEE9;
+    --grey-blue:#E5E9F0;
+}
+
+body{
+    font-family: "Lora", serif;
+    font-weight: 500;
+    margin:0;
+    padding:0;
+    display: flex;
+    position:fixed;
+    
+}
+
+nav{
+    display:flex;
+    flex-direction: column;
+    width:128px;
+    align-items: center;
+}
+
+.logoDiv{
+    height:128px;
+    width: 128px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoDiv img{
+    max-height:100% ;
+    padding:24px;
+    box-sizing: border-box;
+}
+
+header{
+    display:flex;
+    align-items: center;
+    height:128px;
+
+}
+
+h1{
+    font-weight: 400;
+    font-size: 40px;
+    color:var(--dark-blue);
+    margin:0;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 32px;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+summary{
+    font-weight: 400;
+    font-size:20px;
+}
+
+p,li{
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+main{
+    width:calc(100vw - 128px);
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    overflow-y: scroll;
+
+    
+}
+
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width:128px;
+    height:100vh;
+
+}
+
+.sidebar a{
+margin:14px;
+text-decoration: none;
+color:var(--dark-blue);
+font-size: 18px;
+}
+
+
+
+.homeImgContainer{
+    height:calc(100vh - 128px);
+    width:100%;
+    display:flex;
+    align-items: flex-end;
+    background-image: linear-gradient(rgba(46,52,64,0%), rgba(32,36,45,100%)), url("img/highway.jpg");
+    background-size: cover;
+    color:white;
+}
+
+.homeImgContainer h3{
+    max-width: 650px;
+    margin:24px;
+    
+}
+
+#company{
+    background-color: var(--dark-blue);
+    display:flex;
+    height:100vh;
+    width:100%;
+}
+
+#company img{
+    width:50%;
+}
+
+.about{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+}
+
+.about h2, .about p{
+    margin:24px 48px;
+    box-sizing: border-box;
+}
+
+
+#services{
+    background-color: var(--light-grey);
+    display:flex;
+    /* min-height:100vh; */
+    width:100%;
+    color:var(--dark-blue);
+
+}
+
+
+.serviceInfo{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:64px 0;
+}
+
+#services img{
+    width:50%;
+    height:100%;
+    object-fit: cover;
+}
+
+#services h2{
+    margin:24px 48px;
+    box-sizing: border-box;
+}
+
+ #services details{
+    margin:8px 48px;
+ }
+
+ .imgGallery{
+    height:200px;
+    display:flex;
+    margin:8px 0;
+ }
+
+ .imgGallery img{
+    margin:8px;
+ }
+
+ #projects{
+    background-color: var(--light-blue);
+    padding:64px 48px;
+ }
+
+ #projects details{
+    border-top:1px solid;
+    padding:16px 8px;
+ }
+
+ #clients{
+    background-color: var(--grey-blue);
+    padding:64px 48px;
+    color:var(--dark-blue)
+ }
+
+ .clientsDiv{
+    display:flex;
+    justify-content: space-between;
+ }
+
+ .clientsCol p{
+    margin:8px 0;
+ }
+ 
