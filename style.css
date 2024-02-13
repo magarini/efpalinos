@@ -38,6 +38,10 @@ nav{
     box-sizing: border-box;
 }
 
+.logoDiv h1{
+    display:none;
+}
+
 header{
     display:flex;
     align-items: center;
@@ -127,6 +131,7 @@ font-size: 18px;
 
 #company img{
     width:50%;
+    object-fit: cover;
 }
 
 .about{
@@ -180,6 +185,9 @@ font-size: 18px;
     height:200px;
     display:flex;
     margin:8px 0;
+    overflow-x: scroll;
+
+    box-shadow: inset -7px 0 9px -7px rgba(0,0,0,0.4);
  }
 
  .imgGallery img{
@@ -205,9 +213,82 @@ font-size: 18px;
  .clientsDiv{
     display:flex;
     justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
  }
 
  .clientsCol p{
     margin:8px 0;
  }
  
+
+ @media only screen and (max-width: 800px){
+
+    body{
+        flex-direction: column;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    nav{
+        width:100vw;
+        align-items: flex-start;
+    }
+
+    .logoDiv{
+        width:100vw;
+        justify-content: flex-start;
+        text-decoration: none;
+    }
+
+    a.logoDiv h1{
+        display:flex;
+    }
+
+    header{
+        display:none;
+    }
+
+    .sidebar{
+        height:auto;
+        padding-bottom: 32px;
+    }
+
+    main{
+        height:auto;
+        overflow-y: auto;
+        width:100vw;
+    }
+
+    #company,#services{
+        flex-direction: column;
+    }
+
+    #company img{
+        width:100vw;
+        height: 500px;
+       
+    }
+
+    #company .about{
+        width:100vw;
+        padding:64px 0;
+    }
+
+    #services .serviceInfo{
+        width:100vw;
+    }
+
+    #services img{
+        width:100vw;
+    }
+
+
+
+    .imgGallery{
+        height:150px;
+    }
+
+  
+
+ }
