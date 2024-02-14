@@ -2,6 +2,7 @@
 
 :root{
     --dark-blue:#2E3440;
+    --mid-blue:#4F5878;
     --light-grey:#ECEFF4;
     --light-blue:#D8DEE9;
     --grey-blue:#E5E9F0;
@@ -14,6 +15,7 @@ body{
     padding:0;
     display: flex;
     position:fixed;
+    max-width: 100vw;
     
 }
 
@@ -182,16 +184,16 @@ font-size: 18px;
  }
 
  .imgGallery{
-    height:200px;
     display:flex;
+    flex-wrap: wrap;
     margin:8px 0;
-    overflow-x: scroll;
 
-    box-shadow: inset -7px 0 9px -7px rgba(0,0,0,0.4);
  }
 
  .imgGallery img{
-    margin:8px;
+    margin:0 8px 8px 0;
+    height:200px;
+    box-sizing: border-box;
  }
 
  #projects{
@@ -221,6 +223,13 @@ font-size: 18px;
     margin:8px 0;
  }
  
+ @media only screen and (min-width: 800px) and (max-width: 935px){
+
+    .imgGallery img{
+        height:150px;
+    }
+
+ }
 
  @media only screen and (max-width: 800px){
 
@@ -260,6 +269,22 @@ font-size: 18px;
         width:100vw;
     }
 
+    #home{
+        height:calc(100vh - 415px)
+    }
+
+    .homeImgContainer{
+        height:100%;
+    }
+
+    .homeImgContainer h3{
+        max-width: 650px;
+        margin:48px 32px;
+        
+    }
+
+   
+
     #company,#services{
         flex-direction: column;
     }
@@ -273,6 +298,7 @@ font-size: 18px;
     #company .about{
         width:100vw;
         padding:64px 0;
+        height:calc(100vh - 500px)
     }
 
     #services .serviceInfo{
@@ -285,10 +311,23 @@ font-size: 18px;
 
 
 
-    .imgGallery{
+    .imgGallery img{
         height:150px;
     }
 
-  
+    .floatingBtn{
+        height:56px;
+        width:56px;
+        position:fixed;
+        bottom:32px;
+        right:32px;
+        background-color: var(--mid-blue);
+        color:white;
+        border-radius: 32px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px #0000003a;
+    }
 
  }
