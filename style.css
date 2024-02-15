@@ -353,14 +353,14 @@ font-size: 18px;
 
     #company img{
         width:100vw;
-        height: 500px;
+        max-height: 45vh;
        
     }
 
     #company .about{
         width:100vw;
         padding:64px 0;
-        height:calc(100vh - 500px)
+        min-height:50vh;
     }
 
     #services .serviceInfo{
@@ -392,4 +392,13 @@ font-size: 18px;
         box-shadow: 0 4px 10px #0000003a;
     }
 
+ }
+
+
+ @media only screen and (max-width: 800px){
+
+    .imgGallery img{
+        width:100%;
+        height:auto;
+    }
  }
