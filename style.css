@@ -257,7 +257,7 @@ font-size: 18px;
  }
 
  .contactDetails{
-    margin:48px 0;
+    margin:48px 0 16px;
  }
 
  .floatingBtn{
@@ -319,6 +319,10 @@ font-size: 18px;
     background-size: 24px;
 
   }
+
+  .showBtn{
+    display:flex;
+}
   
 
  
@@ -423,11 +427,12 @@ font-size: 18px;
         background-color: var(--mid-blue);
         color:white;
         border-radius: 32px;
-        display:flex;
         align-items: center;
         justify-content: center;
         box-shadow: 0 4px 10px #0000003a;
     }
+
+   
 
  }
 
